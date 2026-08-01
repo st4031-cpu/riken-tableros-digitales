@@ -2,9 +2,11 @@
 // SUPABASE
 //==============================================
 
-const SUPABASE_URL = "https://wdeuihmmbfkgzzbdwuax.supabase.co";
+const SUPABASE_URL =
+    "https://wdeuihmmbfkgzzbdwuax.supabase.co";
 
-const SUPABASE_KEY = "sb_publishable_cJYqWcp8i3_fJFczF4Juug_Yidj6pqi";
+const SUPABASE_KEY =
+    "sb_publishable_cJYqWcp8i3_fJFczF4Juug_Yidj6pqi";
 
 const db = supabase.createClient(
 
@@ -19,17 +21,8 @@ const db = supabase.createClient(
 // URL DEL SISTEMA
 //==============================================
 
-// Mientras desarrollas usa automáticamente
-// la dirección desde donde abriste la página.
-// Cuando publiques el sistema solo cambia
-// esta línea por tu dominio.
+// URL pública del sistema.
+// Se utiliza para generar los códigos QR.
 
-const URL_SISTEMA = window.location.origin;
-
-// Ejemplo cuando publiques:
-//
-// const URL_SISTEMA = "https://tableros.riken.com";
-//
-// o
-//
-// const URL_SISTEMA = "https://tableros.riken.com.mx";
+const URL_SISTEMA =
+    "https://st4031-cpu.github.io/riken-tableros-digitales";
