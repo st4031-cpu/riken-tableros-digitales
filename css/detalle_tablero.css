@@ -1,0 +1,371 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Segoe UI,Tahoma,Geneva,Verdana,sans-serif;
+}
+
+body{
+
+    min-height:100vh;
+
+    background:
+    linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+    url("../img/fondo.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-attachment:fixed;
+
+    padding:40px;
+
+}
+
+/*==============================================
+BARRA DE ACCIONES
+==============================================*/
+
+.barraAcciones{
+
+    max-width:1200px;
+
+    margin:25px auto;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+.btnSecundario{
+
+    background:#6c757d;
+
+    color:white;
+
+    border:none;
+
+    padding:12px 28px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    font-weight:bold;
+
+    transition:.25s;
+
+}
+
+.btnSecundario:hover{
+
+    background:#5a6268;
+
+}
+
+.btnPrincipal{
+
+    background:#ffc107;
+
+    color:#000;
+
+    border:none;
+
+    padding:12px 28px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    font-weight:bold;
+
+    transition:.25s;
+
+}
+
+.btnPrincipal:hover{
+
+    background:#e0a800;
+
+}
+
+/*==============================================
+CONTENEDOR
+==============================================*/
+
+.contenedor{
+
+    max-width:1200px;
+
+    margin:auto;
+
+}
+
+/*==============================================
+TARJETAS
+==============================================*/
+
+.card{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:25px;
+
+    margin-bottom:25px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.18);
+
+}
+
+.card h2{
+
+    color:#157347;
+
+    margin-bottom:20px;
+
+    font-size:34px;
+
+}
+
+/*==============================================
+INFORMACIÓN
+==============================================*/
+
+.datos{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+    gap:20px;
+
+}
+
+.datos div{
+
+    background:#f7f7f7;
+
+    border-radius:12px;
+
+    padding:18px;
+
+}
+
+.datos label{
+
+    display:block;
+
+    color:#666;
+
+    font-size:14px;
+
+    font-weight:bold;
+
+    margin-bottom:8px;
+
+}
+
+.datos p{
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    color:#222;
+
+}
+
+/*==============================================
+TEXTOS
+==============================================*/
+
+.card p{
+
+    color:#444;
+
+    line-height:1.7;
+
+    font-size:18px;
+
+}
+
+/*==============================================
+GALERÍA
+==============================================*/
+
+#galeria{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fill,minmax(220px,1fr));
+
+    gap:20px;
+
+    margin-top:15px;
+
+}
+
+#galeria:empty{
+
+    display:none;
+
+}
+
+#galeria img{
+
+    width:100%;
+
+    border-radius:15px;
+
+    box-shadow:0 10px 20px rgba(0,0,0,.18);
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+#galeria img:hover{
+
+    transform:scale(1.03);
+
+}
+
+/*==============================================
+DOCUMENTOS
+==============================================*/
+
+#listaDocumentos{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:12px;
+
+}
+
+.documento{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    background:#f8f8f8;
+
+    border:1px solid #e2e2e2;
+
+    border-radius:12px;
+
+    padding:16px 22px;
+
+    transition:.25s;
+
+}
+
+.documento:hover{
+
+    background:#f2f2f2;
+
+}
+
+.documento span{
+
+    font-size:22px;
+
+    font-weight:600;
+
+    color:#333;
+
+}
+
+.botonDocumento{
+
+    background:#157347;
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:10px 18px;
+
+    border-radius:8px;
+
+    font-size:15px;
+
+    font-weight:bold;
+
+    transition:.25s;
+
+}
+
+.botonDocumento:hover{
+
+    background:#115c37;
+
+}
+
+/*==============================================
+RESPONSIVE
+==============================================*/
+
+@media(max-width:900px){
+
+    body{
+
+        padding:20px;
+
+    }
+
+    .barraAcciones{
+
+        flex-direction:column;
+
+        gap:15px;
+
+    }
+
+    .btnPrincipal,
+    .btnSecundario{
+
+        width:100%;
+
+    }
+
+    .datos{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .documento{
+
+        flex-direction:column;
+
+        gap:15px;
+
+        text-align:center;
+
+    }
+
+    .botonDocumento{
+
+        width:100%;
+
+        text-align:center;
+
+    }
+
+}

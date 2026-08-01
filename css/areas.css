@@ -1,0 +1,304 @@
+/* =======================================================
+   CONFIGURACIÓN GENERAL
+======================================================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Segoe UI",sans-serif;
+}
+
+body{
+
+    min-height:100vh;
+
+    background:
+    linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+    url("../img/fondo.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+
+    padding:40px;
+
+}
+
+/* =======================================================
+   HEADER
+======================================================= */
+
+.header{
+
+    max-width:1300px;
+
+    margin:auto;
+    margin-bottom:35px;
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:25px 40px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    box-shadow:0 20px 40px rgba(0,0,0,.25);
+
+}
+
+.logo{
+
+    width:180px;
+
+}
+
+.titulo{
+
+    text-align:center;
+
+}
+
+.titulo h1{
+
+    color:#157347;
+
+    font-size:52px;
+
+    margin-bottom:8px;
+
+}
+
+.titulo p{
+
+    color:#666;
+
+    font-size:22px;
+
+}
+
+.volver{
+
+    background:#157347;
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:14px 30px;
+
+    border-radius:12px;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+.volver:hover{
+
+    background:#0f5d36;
+
+}
+
+/* =======================================================
+   CONTENEDOR
+======================================================= */
+
+.contenedor{
+
+    max-width:1300px;
+
+    margin:auto;
+
+}
+
+/* =======================================================
+   TARJETAS
+======================================================= */
+
+.card{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:35px;
+
+    margin-bottom:30px;
+
+    box-shadow:0 20px 40px rgba(0,0,0,.20);
+
+}
+
+.card h2{
+
+    color:#157347;
+
+    font-size:34px;
+
+    margin-bottom:25px;
+
+}
+
+.card label{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    font-weight:600;
+
+    color:#444;
+
+}
+
+/* =======================================================
+   INPUTS
+======================================================= */
+
+.card input[type=text]{
+
+    width:100%;
+
+    padding:16px;
+
+    font-size:17px;
+
+    border:2px solid #d9d9d9;
+
+    border-radius:12px;
+
+    margin-bottom:25px;
+
+    outline:none;
+
+}
+
+.card input[type=text]:focus{
+
+    border-color:#157347;
+
+}
+
+.colorPicker{
+
+    width:90px;
+
+    height:60px;
+
+    border:none;
+
+    background:none;
+
+    cursor:pointer;
+
+    margin-bottom:30px;
+
+}
+
+/* =======================================================
+   BOTÓN
+======================================================= */
+
+#guardarArea{
+
+    width:100%;
+
+    padding:18px;
+
+    background:#157347;
+
+    color:white;
+
+    border:none;
+
+    border-radius:12px;
+
+    font-size:20px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+#guardarArea:hover{
+
+    background:#0f5d36;
+
+}
+
+/* =======================================================
+   LISTA DE ÁREAS
+======================================================= */
+
+.listaAreas{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fill,minmax(300px,1fr));
+
+    gap:25px;
+
+}
+.cardArea{
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:20px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+
+}
+
+.cardArea .color{
+
+    width:100%;
+
+    height:15px;
+
+    border-radius:10px;
+
+    margin-bottom:15px;
+
+}
+
+.cardArea h3{
+
+    margin-bottom:20px;
+
+    color:#333;
+
+}
+
+.cardArea button{
+
+    width:100%;
+
+    background:#157347;
+
+    color:white;
+
+    border:none;
+
+    border-radius:10px;
+
+    padding:12px;
+
+    cursor:pointer;
+
+    font-weight:bold;
+
+}

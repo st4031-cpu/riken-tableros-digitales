@@ -1,0 +1,291 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Segoe UI,Tahoma,Geneva,Verdana,sans-serif;
+}
+
+body{
+
+    min-height:100vh;
+
+    background:
+    linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+    url("../img/fondo.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-attachment:fixed;
+
+    padding:40px;
+
+}
+
+.header{
+
+    max-width:1200px;
+
+    margin:auto;
+
+    margin-bottom:30px;
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:25px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    box-shadow:0 20px 40px rgba(0,0,0,.25);
+
+}
+
+.logo{
+
+    width:170px;
+
+}
+
+.header h1{
+
+    color:#157347;
+
+    font-size:40px;
+
+}
+
+.header p{
+
+    color:#666;
+
+    margin-top:5px;
+
+}
+
+.volver{
+
+    background:#157347;
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:12px 25px;
+
+    border-radius:10px;
+
+    font-weight:bold;
+
+}
+
+.contenedor{
+
+    max-width:1200px;
+
+    margin:auto;
+
+}
+
+.nuevoTablero{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:30px;
+
+    margin-bottom:30px;
+
+    box-shadow:0 20px 40px rgba(0,0,0,.20);
+
+}
+
+.nuevoTablero h2{
+
+    color:#157347;
+
+    margin-bottom:20px;
+
+}
+
+.nuevoTablero label{
+
+    display:block;
+
+    font-weight:bold;
+
+    margin-bottom:8px;
+
+    margin-top:15px;
+
+}
+
+.nuevoTablero input{
+
+    width:100%;
+
+    padding:15px;
+
+    border:2px solid #ddd;
+
+    border-radius:10px;
+
+    margin-bottom:10px;
+
+    font-size:16px;
+
+}
+
+.nuevoTablero button{
+
+    width:100%;
+
+    margin-top:20px;
+
+    padding:15px;
+
+    background:#157347;
+
+    color:white;
+
+    border:none;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+}
+
+.lista{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:30px;
+
+    box-shadow:0 20px 40px rgba(0,0,0,.20);
+
+}
+
+.lista h2{
+
+    color:#157347;
+
+    margin-bottom:25px;
+
+}
+
+#listaTableros{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fill,minmax(280px,1fr));
+
+    gap:20px;
+
+}
+/*==============================================
+TARJETAS DE TABLEROS
+==============================================*/
+
+#listaTableros{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fill,minmax(300px,1fr));
+
+    gap:25px;
+
+    margin-top:25px;
+
+}
+
+.cardTablero{
+
+    background:white;
+
+    border-radius:18px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+
+    overflow:hidden;
+
+    transition:.25s;
+
+}
+
+.cardTablero:hover{
+
+    transform:translateY(-5px);
+
+}
+
+.cardTablero .color{
+
+    width:100%;
+
+    height:14px;
+
+}
+
+.cardTablero h3{
+
+    margin:20px 20px 10px;
+
+    color:#157347;
+
+    font-size:28px;
+
+}
+
+.cardTablero p{
+
+    margin:0 20px 20px;
+
+    color:#555;
+
+    min-height:45px;
+
+}
+
+.cardTablero button{
+
+    width:calc(100% - 40px);
+
+    margin:0 20px 20px;
+
+    padding:14px;
+
+    background:#157347;
+
+    color:white;
+
+    border:none;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    font-weight:bold;
+
+}
+
+.cardTablero button:hover{
+
+    background:#115c37;
+
+}

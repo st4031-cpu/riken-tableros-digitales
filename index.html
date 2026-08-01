@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>RIKEN | Gestión de Tableros</title>
+
+    <link rel="stylesheet" href="css/header.css">
+
+    <link rel="stylesheet" href="css/index.css">
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <div id="header"></div>
+
+    <div class="overlay">
+
+        <div class="card">
+
+            <img
+                src="img/logo.png"
+                class="logo">
+
+            <h1>
+
+                Gestión de Tableros
+
+            </h1>
+
+            <p>
+
+                Sistema de consulta y administración de tableros eléctricos
+
+            </p>
+
+            <input
+                id="buscar"
+                type="text"
+                placeholder="Buscar tablero...">
+
+            <button
+                id="btnAreas">
+
+                Ver Áreas
+
+            </button>
+
+            <div class="estadisticas">
+
+                <div>
+
+                    <span id="totalAreas">
+
+                        0
+
+                    </span>
+
+                    <small>Áreas</small>
+
+                </div>
+
+                <div>
+
+                    <span id="totalTableros">
+
+                        0
+
+                    </span>
+
+                    <small>Tableros</small>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+    <script src="js/config.js"></script>
+
+    <script src="js/auth.js"></script>
+
+    <script src="js/header.js"></script>
+
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>

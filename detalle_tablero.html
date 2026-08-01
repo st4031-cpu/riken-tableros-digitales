@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Detalle del tablero | RIKEN</title>
+
+    <link rel="stylesheet" href="css/header.css">
+
+    <link rel="stylesheet" href="css/detalle_tablero.css">
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <div id="header"></div>
+
+
+    <!--========================================-->
+    <!-- BARRA DE ACCIONES -->
+    <!--========================================-->
+
+    <div class="barraAcciones">
+
+        <button
+            id="btnRegresar"
+            class="btnSecundario">
+
+            ← Regresar
+
+        </button>
+
+        <button
+            id="btnEditar"
+            class="btnPrincipal">
+
+            Editar
+
+        </button>
+
+    </div>
+
+
+    <main class="contenedor">
+
+        <!--========================================-->
+        <!-- INFORMACIÓN GENERAL -->
+        <!--========================================-->
+
+        <section class="card">
+
+            <h2>Información general</h2>
+
+            <div class="datos">
+
+                <div>
+
+                    <label>Código</label>
+
+                    <p id="codigo">-</p>
+
+                </div>
+
+                <div>
+
+                    <label>Nombre</label>
+
+                    <p id="nombre">-</p>
+
+                </div>
+
+                <div>
+
+                    <label>Área</label>
+
+                    <p id="area">-</p>
+
+                </div>
+
+                <div>
+
+                    <label>Ubicación</label>
+
+                    <p id="ubicacion">-</p>
+
+                </div>
+
+                <div>
+
+                    <label>Voltaje</label>
+
+                    <p id="voltaje">-</p>
+
+                </div>
+
+                <div>
+
+                    <label>Fabricante</label>
+
+                    <p id="fabricante">-</p>
+
+                </div>
+
+                <div>
+
+                    <label>Responsable</label>
+
+                    <p id="responsable">-</p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!--========================================-->
+        <!-- DESCRIPCIÓN -->
+        <!--========================================-->
+
+        <section class="card">
+
+            <h2>Descripción</h2>
+
+            <p id="descripcion">-</p>
+
+        </section>
+
+
+        <!--========================================-->
+        <!-- OBSERVACIONES -->
+        <!--========================================-->
+
+        <section class="card">
+
+            <h2>Observaciones</h2>
+
+            <p id="observaciones">-</p>
+
+        </section>
+
+
+        <!--========================================-->
+        <!-- FOTOGRAFÍAS -->
+        <!--========================================-->
+
+        <section class="card">
+
+            <h2>Fotografías</h2>
+
+            <div id="galeria"></div>
+
+        </section>
+
+
+        <!--========================================-->
+        <!-- DOCUMENTOS -->
+        <!--========================================-->
+
+        <section class="card">
+
+            <h2>Documentos</h2>
+
+            <div id="listaDocumentos">
+
+                <div class="documento">
+
+                    <span>📘 Manual PDF</span>
+
+                    <a
+                        id="btnManual"
+                        class="botonDocumento"
+                        target="_blank">
+
+                        Abrir
+
+                    </a>
+
+                </div>
+
+                <div class="documento">
+
+                    <span>📐 Layout</span>
+
+                    <a
+                        id="btnLayout"
+                        class="botonDocumento"
+                        target="_blank">
+
+                        Abrir
+
+                    </a>
+
+                </div>
+
+                <div class="documento">
+
+                    <span>⚡ Diagrama eléctrico</span>
+
+                    <a
+                        id="btnDiagrama"
+                        class="botonDocumento"
+                        target="_blank">
+
+                        Abrir
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!--========================================-->
+        <!-- CÓDIGO QR -->
+        <!--========================================-->
+
+        <section class="card">
+
+            <h2>Código QR</h2>
+
+            <div id="qr"></div>
+
+            <button
+                id="btnDescargarQR"
+                class="btnPrincipal">
+
+                Descargar QR
+
+            </button>
+
+        </section>
+
+    </main>
+
+
+    <!-- QRCode.js -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+    <script src="js/config.js"></script>
+
+    <script src="js/auth.js"></script>
+
+    <script src="js/header.js"></script>
+
+    <script src="js/detalle_tablero.js"></script>
+
+</body>
+
+</html>

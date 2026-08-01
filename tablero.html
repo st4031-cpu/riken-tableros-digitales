@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tableros | RIKEN</title>
+
+    <link rel="stylesheet" href="css/tablero.css">
+
+</head>
+
+<body>
+
+    <header class="header">
+
+        <img src="img/logo.png" class="logo">
+
+        <div>
+
+            <h1 id="nombreArea">Área</h1>
+
+            <p>Gestión de tableros eléctricos</p>
+
+        </div>
+
+        <a href="areas.html" class="volver">
+
+            Regresar
+
+        </a>
+
+    </header>
+
+    <main class="contenedor">
+
+        <section class="nuevoTablero">
+
+            <h2>Nuevo tablero</h2>
+
+            <label>Código</label>
+
+            <input
+                id="codigo"
+                type="text"
+                placeholder="Ejemplo: T-01">
+
+            <label>Nombre</label>
+
+            <input
+                id="nombre"
+                type="text"
+                placeholder="Ejemplo: Tablero Principal">
+
+            <button id="guardar">
+
+                Guardar Tablero
+
+            </button>
+
+        </section>
+
+        <section class="lista">
+
+            <h2>Tableros registrados</h2>
+
+            <div id="listaTableros"></div>
+
+        </section>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+    <script src="js/config.js"></script>
+
+    <script src="js/tablero.js"></script>
+
+</body>
+
+</html>

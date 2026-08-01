@@ -1,0 +1,136 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Segoe UI,Tahoma,Geneva,Verdana,sans-serif;
+}
+
+body{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:
+    linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+    url("../img/fondo.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-attachment:fixed;
+
+}
+
+.login{
+
+    width:430px;
+
+    background:white;
+
+    padding:45px;
+
+    border-radius:22px;
+
+    box-shadow:0 20px 45px rgba(0,0,0,.30);
+
+    text-align:center;
+
+}
+
+.logo{
+
+    width:180px;
+
+    margin-bottom:25px;
+
+}
+
+.login h1{
+
+    color:#157347;
+
+    margin-bottom:10px;
+
+    font-size:34px;
+
+}
+
+.login p{
+
+    color:#666;
+
+    margin-bottom:25px;
+
+}
+
+.login input{
+
+    width:100%;
+
+    padding:15px;
+
+    margin-bottom:18px;
+
+    border:2px solid #ddd;
+
+    border-radius:10px;
+
+    font-size:16px;
+
+    outline:none;
+
+    transition:.2s;
+
+}
+
+.login input:focus{
+
+    border-color:#157347;
+
+}
+
+.login button{
+
+    width:100%;
+
+    padding:16px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#157347;
+
+    color:white;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.2s;
+
+}
+
+.login button:hover{
+
+    background:#115c37;
+
+}
+
+#mensaje{
+
+    margin-top:20px;
+
+    color:red;
+
+    font-weight:bold;
+
+}

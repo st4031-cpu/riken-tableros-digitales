@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Áreas | RIKEN</title>
+
+    <link rel="stylesheet" href="css/header.css">
+
+    <link rel="stylesheet" href="css/areas.css">
+
+</head>
+
+<body>
+
+    <!-- HEADER DEL SISTEMA -->
+    <div id="header"></div>
+
+
+    <main class="contenedor">
+
+        <!-- ========================= -->
+        <!-- NUEVA ÁREA -->
+        <!-- ========================= -->
+
+        <section class="card">
+
+            <h2>Nueva Área</h2>
+
+            <label>Nombre del área</label>
+
+            <input
+                type="text"
+                id="nombreArea"
+                placeholder="Ejemplo: Energías">
+
+            <label>Color del área</label>
+
+            <input
+                type="color"
+                id="colorArea"
+                class="colorPicker"
+                value="#157347">
+
+            <button id="guardarArea">
+
+                Guardar Área
+
+            </button>
+
+        </section>
+
+
+
+        <!-- ========================= -->
+        <!-- ÁREAS REGISTRADAS -->
+        <!-- ========================= -->
+
+        <section class="card">
+
+            <h2>Áreas registradas</h2>
+
+            <div
+                id="listaAreas"
+                class="listaAreas">
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+    <script src="js/config.js"></script>
+
+    <script src="js/auth.js"></script>
+
+    <script src="js/header.js"></script>
+
+    <script src="js/areas.js"></script>
+
+</body>
+
+</html>

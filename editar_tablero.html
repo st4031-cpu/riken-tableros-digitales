@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Editar tablero | RIKEN</title>
+
+    <link rel="stylesheet" href="css/editar_tablero.css">
+
+</head>
+
+<body>
+
+    <header class="header">
+
+        <img
+            src="img/logo.png"
+            class="logo">
+
+        <div>
+
+            <h1 id="titulo">
+
+                Editar tablero
+
+            </h1>
+
+            <p id="area">
+
+                Área
+
+            </p>
+
+        </div>
+
+        <a
+            href="javascript:history.back()"
+            class="volver">
+
+            Cancelar
+
+        </a>
+
+    </header>
+
+
+    <main class="contenedor">
+
+
+        <!--========================================-->
+        <!-- INFORMACIÓN GENERAL -->
+        <!--========================================-->
+
+        <section class="card">
+
+            <h2>Información general</h2>
+
+            <div class="grid2">
+
+                <div>
+
+                    <label>Código</label>
+
+                    <input
+                        id="codigo"
+                        type="text">
+
+                </div>
+
+                <div>
+
+                    <label>Nombre</label>
+
+                    <input
+                        id="nombre"
+                        type="text">
+
+                </div>
+
+                <div>
+
+                    <label>Ubicación</label>
+
+                    <input
+                        id="ubicacion"
+                        type="text">
+
+                </div>
+
+                <div>
+
+                    <label>Voltaje</label>
+
+                    <input
+                        id="voltaje"
+                        type="text">
+
+                </div>
+
+                <div>
+
+                    <label>Fabricante</label>
+
+                    <input
+                        id="fabricante"
+                        type="text">
+
+                </div>
+
+                <div>
+
+                    <label>Responsable</label>
+
+                    <input
+                        id="responsable"
+                        type="text">
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!--========================================-->
+        <!-- DESCRIPCIÓN -->
+        <!--========================================-->
+
+        <section class="card">
+
+            <h2>Descripción</h2>
+
+            <textarea
+                id="descripcion"
+                rows="8"></textarea>
+
+        </section>
+
+
+        <!--========================================-->
+        <!-- OBSERVACIONES -->
+        <!--========================================-->
+
+        <section class="card">
+
+            <h2>Observaciones</h2>
+
+            <textarea
+                id="observaciones"
+                rows="8"></textarea>
+
+        </section>
+
+
+        <!--========================================-->
+        <!-- FOTOGRAFÍA -->
+        <!--========================================-->
+
+        <section class="card">
+
+            <h2>Fotografía del tablero</h2>
+
+            <input
+                id="foto"
+                type="file"
+                accept="image/*">
+
+            <br><br>
+
+            <img
+                id="vistaFoto"
+                src=""
+                style="display:none;width:100%;max-width:450px;border-radius:15px;box-shadow:0 10px 25px rgba(0,0,0,.20);">
+
+        </section>
+
+
+        <!--========================================-->
+        <!-- MANUAL -->
+        <!--========================================-->
+
+        <section class="card">
+
+            <h2>Manual PDF</h2>
+
+            <label>URL del manual</label>
+
+            <input
+                id="manual_url"
+                type="text"
+                placeholder="https://...">
+
+        </section>
+
+
+        <!--========================================-->
+        <!-- LAYOUT -->
+        <!--========================================-->
+
+        <section class="card">
+
+            <h2>Layout</h2>
+
+            <label>URL del layout</label>
+
+            <input
+                id="layout_url"
+                type="text"
+                placeholder="https://...">
+
+        </section>
+
+
+        <!--========================================-->
+        <!-- DIAGRAMA -->
+        <!--========================================-->
+
+        <section class="card">
+
+            <h2>Diagrama eléctrico</h2>
+
+            <label>URL del diagrama</label>
+
+            <input
+                id="diagrama_url"
+                type="text"
+                placeholder="https://...">
+
+        </section>
+
+
+        <!--========================================-->
+        <!-- BOTÓN -->
+        <!--========================================-->
+
+        <button
+            id="guardar"
+            class="guardar">
+
+            Guardar cambios
+
+        </button>
+
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+    <script src="js/config.js"></script>
+
+    <script src="js/editar_tablero.js"></script>
+
+</body>
+
+</html>

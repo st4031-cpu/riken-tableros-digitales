@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Iniciar sesión | RIKEN</title>
+
+    <link rel="stylesheet" href="css/login.css">
+
+</head>
+
+<body>
+
+    <div class="login">
+
+        <img src="img/logo.png" class="logo">
+
+        <h1>Control de Tableros</h1>
+
+        <p>Inicia sesión para continuar</p>
+
+        <input
+            id="correo"
+            type="email"
+            placeholder="Correo">
+
+        <input
+            id="password"
+            type="password"
+            placeholder="Contraseña">
+
+        <button id="btnEntrar">
+
+            Iniciar sesión
+
+        </button>
+
+        <p id="mensaje"></p>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+    <script src="js/config.js"></script>
+
+    <script src="js/login.js"></script>
+
+</body>
+
+</html>

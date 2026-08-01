@@ -1,0 +1,170 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Segoe UI,Tahoma,Geneva,Verdana,sans-serif;
+}
+
+body{
+
+    min-height:100vh;
+
+    background:url("../img/fondo.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-repeat:no-repeat;
+
+}
+
+.overlay{
+
+    width:100%;
+    min-height:100vh;
+
+    background:rgba(0,0,0,.55);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:40px;
+
+}
+
+.card{
+
+    width:100%;
+    max-width:650px;
+
+    background:white;
+
+    border-radius:25px;
+
+    padding:50px;
+
+    text-align:center;
+
+    box-shadow:0 20px 60px rgba(0,0,0,.35);
+
+}
+
+.logo{
+
+    width:170px;
+
+    margin-bottom:25px;
+
+}
+
+h1{
+
+    color:#0d6b3d;
+
+    font-size:38px;
+
+    margin-bottom:10px;
+
+}
+
+p{
+
+    color:#666;
+
+    margin-bottom:35px;
+
+    font-size:18px;
+
+}
+
+#buscar{
+
+    width:100%;
+
+    padding:18px;
+
+    border-radius:15px;
+
+    border:2px solid #dcdcdc;
+
+    font-size:18px;
+
+    outline:none;
+
+    margin-bottom:25px;
+
+}
+
+#buscar:focus{
+
+    border-color:#0d6b3d;
+
+}
+
+#btnAreas{
+
+    width:100%;
+
+    padding:18px;
+
+    border:none;
+
+    border-radius:15px;
+
+    background:#0d6b3d;
+
+    color:white;
+
+    font-size:18px;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+#btnAreas:hover{
+
+    background:#0a5832;
+
+}
+
+.estadisticas{
+
+    display:flex;
+
+    justify-content:space-around;
+
+    margin-top:40px;
+
+}
+
+.estadisticas div{
+
+    text-align:center;
+
+}
+
+.estadisticas span{
+
+    display:block;
+
+    font-size:40px;
+
+    font-weight:bold;
+
+    color:#0d6b3d;
+
+}
+
+.estadisticas small{
+
+    color:#666;
+
+    font-size:16px;
+
+}
