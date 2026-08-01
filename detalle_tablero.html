@@ -19,6 +19,7 @@
 <body>
 
     <!-- HEADER -->
+
     <div id="header"></div>
 
 
@@ -36,13 +37,25 @@
 
         </button>
 
-        <button
-            id="btnEditar"
-            class="btnPrincipal">
+        <div class="grupoBotones">
 
-            Editar
+            <button
+                id="btnEditar"
+                class="btnPrincipal">
 
-        </button>
+                Editar
+
+            </button>
+
+            <button
+                id="btnQR"
+                class="btnPrincipal">
+
+                Generar QR
+
+            </button>
+
+        </div>
 
     </div>
 
@@ -218,33 +231,8 @@
 
         </section>
 
-
-        <!--========================================-->
-        <!-- CÓDIGO QR -->
-        <!--========================================-->
-
-        <section class="card">
-
-            <h2>Código QR</h2>
-
-            <div id="qr"></div>
-
-            <button
-                id="btnDescargarQR"
-                class="btnPrincipal">
-
-                Descargar QR
-
-            </button>
-
-        </section>
-
     </main>
 
-
-    <!-- QRCode.js -->
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 

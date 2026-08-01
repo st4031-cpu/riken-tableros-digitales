@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>QR del tablero | RIKEN</title>
+
+    <link rel="stylesheet" href="css/header.css">
+
+    <link rel="stylesheet" href="css/qr.css">
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <div id="header"></div>
+
+
+    <main class="contenedor">
+
+        <div class="tarjetaQR">
+
+            <img
+                src="img/logo.png"
+                class="logo">
+
+            <h1>
+
+                RIKEN MÉXICO
+
+            </h1>
+
+            <p class="subtitulo">
+
+                Sistema de Gestión de Tableros
+
+            </p>
+
+            <hr>
+
+            <div class="informacion">
+
+                <label>Código</label>
+
+                <h2 id="codigo">
+
+                    EL-01
+
+                </h2>
+
+                <label>Nombre del tablero</label>
+
+                <h3 id="nombre">
+
+                    Tablero Principal
+
+                </h3>
+
+            </div>
+
+            <div id="qr"></div>
+
+            <p class="texto">
+
+                Escanee este código para consultar la información,
+                fotografías y documentación del tablero.
+
+            </p>
+
+            <div class="botones">
+
+                <button
+                    id="btnDescargar">
+
+                    Descargar PNG
+
+                </button>
+
+                <button
+                    id="btnImprimir">
+
+                    Imprimir
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!--========================================-->
+    <!-- CANVAS OCULTO PARA GENERAR EL PNG -->
+    <!--========================================-->
+
+    <canvas
+        id="canvasQR"
+        width="800"
+        height="1200"
+        style="display:none;">
+    </canvas>
+
+
+    <!--========================================-->
+    <!-- LIBRERÍAS -->
+    <!--========================================-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+    <script src="js/config.js"></script>
+
+    <script src="js/auth.js"></script>
+
+    <script src="js/header.js"></script>
+
+    <script src="js/qr.js"></script>
+
+</body>
+
+</html>

@@ -2,9 +2,6 @@
 // VARIABLES
 //==============================================
 
-const URL_BASE =
-    "https://st4031-cpu.github.io/riken-tableros-digitales";
-
 const params = new URLSearchParams(window.location.search);
 
 const id = params.get("id");
@@ -30,9 +27,7 @@ const btnDiagrama = document.getElementById("btnDiagrama");
 
 const btnEditar = document.getElementById("btnEditar");
 const btnRegresar = document.getElementById("btnRegresar");
-
-const contenedorQR = document.getElementById("qr");
-const btnDescargarQR = document.getElementById("btnDescargarQR");
+const btnQR = document.getElementById("btnQR");
 
 
 //==============================================
@@ -45,7 +40,7 @@ async function iniciar() {
 
     if (!id) {
 
-        console.error("No se recibió el ID.");
+        console.error("No se recibió el ID del tablero.");
 
         return;
 
@@ -68,8 +63,6 @@ async function cargarTablero() {
         .eq("id", id)
         .single();
 
-    console.log(data);
-
     if (error) {
 
         console.error(error);
@@ -82,9 +75,7 @@ async function cargarTablero() {
     // DATOS
     //==========================================
 
-    if (area)
-        area.textContent = data.area || "-";
-
+    area.textContent = data.area || "-";
     codigo.textContent = data.codigo || "-";
     nombre.textContent = data.nombre || "-";
     ubicacion.textContent = data.ubicacion || "-";
@@ -111,8 +102,9 @@ async function cargarTablero() {
 
     } else {
 
-        galeria.innerHTML =
-            "<p>No hay fotografías disponibles.</p>";
+        galeria.innerHTML = `
+            <p>No hay fotografías disponibles.</p>
+        `;
 
     }
 
@@ -125,79 +117,6 @@ async function cargarTablero() {
     configurarDocumento(btnLayout, data.layout_url);
     configurarDocumento(btnDiagrama, data.diagrama_url);
 
-
-    //==========================================
-    // GENERAR QR
-    //==========================================
-
-    if (contenedorQR) {
-
-        contenedorQR.innerHTML = "";
-
-        const enlaceQR =
-            `${URL_BASE}/detalle_tablero.html?id=${id}`;
-
-        new QRCode(contenedorQR, {
-
-            text: enlaceQR,
-
-            width: 250,
-
-            height: 250,
-
-            colorDark: "#000000",
-
-            colorLight: "#ffffff",
-
-            correctLevel: QRCode.CorrectLevel.H
-
-        });
-
-    }
-
-
-    //==========================================
-    // DESCARGAR QR
-    //==========================================
-
-    if (btnDescargarQR) {
-
-        btnDescargarQR.onclick = function () {
-
-            const img =
-                contenedorQR.querySelector("img");
-
-            const canvas =
-                contenedorQR.querySelector("canvas");
-
-            let urlImagen = "";
-
-            if (img) {
-
-                urlImagen = img.src;
-
-            }
-
-            if (canvas) {
-
-                urlImagen = canvas.toDataURL("image/png");
-
-            }
-
-            const enlace =
-                document.createElement("a");
-
-            enlace.href = urlImagen;
-
-            enlace.download =
-                `${data.codigo}_QR.png`;
-
-            enlace.click();
-
-        };
-
-    }
-
 }
 
 
@@ -207,18 +126,14 @@ async function cargarTablero() {
 
 function configurarDocumento(boton, url) {
 
-    if (!boton)
-        return;
+    if (!boton) return;
 
     if (url && url.trim() !== "") {
 
         boton.href = url;
-
         boton.target = "_blank";
 
-    }
-
-    else {
+    } else {
 
         boton.style.display = "none";
 
@@ -252,6 +167,22 @@ if (btnEditar) {
 
         window.location.href =
             `editar_tablero.html?id=${id}`;
+
+    });
+
+}
+
+
+//==============================================
+// BOTÓN GENERAR QR
+//==============================================
+
+if (btnQR) {
+
+    btnQR.addEventListener("click", () => {
+
+        window.location.href =
+            `qr.html?id=${id}`;
 
     });
 
