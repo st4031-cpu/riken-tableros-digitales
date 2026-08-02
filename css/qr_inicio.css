@@ -1,0 +1,196 @@
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Segoe UI,Tahoma,Geneva,Verdana,sans-serif;
+
+}
+
+
+body{
+
+    min-height:100vh;
+
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+
+    background:
+
+    linear-gradient(
+        rgba(0,0,0,.45),
+        rgba(0,0,0,.45)
+    ),
+
+    url("../img/fondo.jpeg");
+
+
+
+    background-size:cover;
+
+    background-position:center 35%;
+
+
+}
+
+
+
+.tarjeta{
+
+
+    background:white;
+
+
+    width:450px;
+
+
+    padding:45px;
+
+
+    border-radius:25px;
+
+
+    text-align:center;
+
+
+    box-shadow:
+    0 20px 50px rgba(0,0,0,.35);
+
+
+}
+
+
+
+.logo{
+
+
+    width:160px;
+
+
+    margin-bottom:20px;
+
+
+}
+
+
+
+h1{
+
+
+    color:#157347;
+
+
+    font-size:32px;
+
+
+}
+
+
+
+h2{
+
+
+    color:#444;
+
+
+    margin:15px 0;
+
+
+}
+
+
+
+p{
+
+
+    color:#666;
+
+
+    margin-bottom:25px;
+
+
+}
+
+
+
+#qr{
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    margin:25px 0;
+
+
+}
+
+
+
+#qr img{
+
+
+    border-radius:10px;
+
+
+}
+
+
+
+.direccion{
+
+
+    font-size:14px;
+
+
+}
+
+
+
+button{
+
+
+    width:100%;
+
+
+    padding:15px;
+
+
+    border:none;
+
+
+    border-radius:10px;
+
+
+    background:#157347;
+
+
+    color:white;
+
+
+    font-size:18px;
+
+
+    font-weight:bold;
+
+
+    cursor:pointer;
+
+
+}
+
+
+button:hover{
+
+
+    background:#115c37;
+
+
+}
