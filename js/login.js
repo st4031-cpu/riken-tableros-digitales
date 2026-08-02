@@ -20,7 +20,20 @@ async function iniciar() {
 
     if (data.session) {
 
-        window.location.href = "index.html";
+        const paginaDestino =
+            sessionStorage.getItem("paginaDestino");
+
+        if (paginaDestino) {
+
+            sessionStorage.removeItem("paginaDestino");
+
+            window.location.href = paginaDestino;
+
+        } else {
+
+            window.location.href = "index.html";
+
+        }
 
     }
 
@@ -63,6 +76,23 @@ async function iniciarSesion() {
 
     }
 
-    window.location.href = "index.html";
+    //==========================================
+    // REGRESAR A LA PÁGINA QUE QUERÍA ABRIR
+    //==========================================
+
+    const paginaDestino =
+        sessionStorage.getItem("paginaDestino");
+
+    if (paginaDestino) {
+
+        sessionStorage.removeItem("paginaDestino");
+
+        window.location.href = paginaDestino;
+
+    } else {
+
+        window.location.href = "index.html";
+
+    }
 
 }
