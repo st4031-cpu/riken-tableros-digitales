@@ -1,27 +1,39 @@
 *{
+
     margin:0;
     padding:0;
     box-sizing:border-box;
     font-family:Segoe UI,Tahoma,Geneva,Verdana,sans-serif;
+
 }
+
 
 body{
 
     min-height:100vh;
 
     background:
-    linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
-    url("../img/fondo.jpg");
+
+    linear-gradient(
+        rgba(0,0,0,.45),
+        rgba(0,0,0,.45)
+    ),
+
+    url("../img/fondo.jpeg");
+
 
     background-size:cover;
 
-    background-position:center;
+    background-position:center 35%;
+
+    background-repeat:no-repeat;
 
     background-attachment:fixed;
 
     padding:40px;
 
 }
+
 
 /*==============================================
 BARRA DE ACCIONES
@@ -40,6 +52,7 @@ BARRA DE ACCIONES
     align-items:center;
 
 }
+
 
 .btnSecundario{
 
@@ -63,11 +76,13 @@ BARRA DE ACCIONES
 
 }
 
+
 .btnSecundario:hover{
 
     background:#5a6268;
 
 }
+
 
 .btnPrincipal{
 
@@ -91,11 +106,14 @@ BARRA DE ACCIONES
 
 }
 
+
 .btnPrincipal:hover{
 
     background:#e0a800;
 
 }
+
+
 
 /*==============================================
 CONTENEDOR
@@ -108,6 +126,8 @@ CONTENEDOR
     margin:auto;
 
 }
+
+
 
 /*==============================================
 TARJETAS
@@ -123,9 +143,11 @@ TARJETAS
 
     margin-bottom:25px;
 
-    box-shadow:0 15px 35px rgba(0,0,0,.18);
+    box-shadow:
+    0 15px 35px rgba(0,0,0,.18);
 
 }
+
 
 .card h2{
 
@@ -137,6 +159,8 @@ TARJETAS
 
 }
 
+
+
 /*==============================================
 INFORMACIÓN
 ==============================================*/
@@ -145,11 +169,13 @@ INFORMACIÓN
 
     display:grid;
 
-    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    grid-template-columns:
+    repeat(auto-fit,minmax(260px,1fr));
 
     gap:20px;
 
 }
+
 
 .datos div{
 
@@ -160,6 +186,7 @@ INFORMACIÓN
     padding:18px;
 
 }
+
 
 .datos label{
 
@@ -175,6 +202,7 @@ INFORMACIÓN
 
 }
 
+
 .datos p{
 
     font-size:18px;
@@ -184,6 +212,8 @@ INFORMACIÓN
     color:#222;
 
 }
+
+
 
 /*==============================================
 TEXTOS
@@ -199,6 +229,8 @@ TEXTOS
 
 }
 
+
+
 /*==============================================
 GALERÍA
 ==============================================*/
@@ -207,7 +239,8 @@ GALERÍA
 
     display:grid;
 
-    grid-template-columns:repeat(auto-fill,minmax(220px,1fr));
+    grid-template-columns:
+    repeat(auto-fill,minmax(220px,1fr));
 
     gap:20px;
 
@@ -215,11 +248,13 @@ GALERÍA
 
 }
 
+
 #galeria:empty{
 
     display:none;
 
 }
+
 
 #galeria img{
 
@@ -227,7 +262,8 @@ GALERÍA
 
     border-radius:15px;
 
-    box-shadow:0 10px 20px rgba(0,0,0,.18);
+    box-shadow:
+    0 10px 20px rgba(0,0,0,.18);
 
     cursor:pointer;
 
@@ -235,11 +271,14 @@ GALERÍA
 
 }
 
+
 #galeria img:hover{
 
     transform:scale(1.03);
 
 }
+
+
 
 /*==============================================
 DOCUMENTOS
@@ -254,6 +293,7 @@ DOCUMENTOS
     gap:12px;
 
 }
+
 
 .documento{
 
@@ -275,11 +315,13 @@ DOCUMENTOS
 
 }
 
+
 .documento:hover{
 
     background:#f2f2f2;
 
 }
+
 
 .documento span{
 
@@ -290,6 +332,7 @@ DOCUMENTOS
     color:#333;
 
 }
+
 
 .botonDocumento{
 
@@ -311,11 +354,14 @@ DOCUMENTOS
 
 }
 
+
 .botonDocumento:hover{
 
     background:#115c37;
 
 }
+
+
 
 /*==============================================
 RESPONSIVE
@@ -329,6 +375,7 @@ RESPONSIVE
 
     }
 
+
     .barraAcciones{
 
         flex-direction:column;
@@ -337,6 +384,7 @@ RESPONSIVE
 
     }
 
+
     .btnPrincipal,
     .btnSecundario{
 
@@ -344,11 +392,13 @@ RESPONSIVE
 
     }
 
+
     .datos{
 
         grid-template-columns:1fr;
 
     }
+
 
     .documento{
 
@@ -359,6 +409,7 @@ RESPONSIVE
         text-align:center;
 
     }
+
 
     .botonDocumento{
 

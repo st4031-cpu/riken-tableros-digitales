@@ -5,23 +5,33 @@
     font-family:Segoe UI,Tahoma,Geneva,Verdana,sans-serif;
 }
 
+
 body{
 
     min-height:100vh;
 
     background:
-    linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
-    url("../img/fondo.jpg");
+    linear-gradient(
+        rgba(0,0,0,.45),
+        rgba(0,0,0,.45)
+    ),
+
+    url("../img/fondo.jpeg");
+
 
     background-size:cover;
 
-    background-position:center;
+    background-position:center 35%;
+
+    background-repeat:no-repeat;
 
     background-attachment:fixed;
 
     padding:40px;
 
 }
+
+
 
 .header{
 
@@ -47,11 +57,15 @@ body{
 
 }
 
+
+
 .logo{
 
     width:170px;
 
 }
+
+
 
 .header h1{
 
@@ -61,6 +75,8 @@ body{
 
 }
 
+
+
 .header p{
 
     color:#666;
@@ -68,6 +84,8 @@ body{
     margin-top:5px;
 
 }
+
+
 
 .volver{
 
@@ -85,6 +103,8 @@ body{
 
 }
 
+
+
 .contenedor{
 
     max-width:1200px;
@@ -92,6 +112,8 @@ body{
     margin:auto;
 
 }
+
+
 
 .nuevoTablero{
 
@@ -107,6 +129,8 @@ body{
 
 }
 
+
+
 .nuevoTablero h2{
 
     color:#157347;
@@ -114,6 +138,8 @@ body{
     margin-bottom:20px;
 
 }
+
+
 
 .nuevoTablero label{
 
@@ -126,6 +152,8 @@ body{
     margin-top:15px;
 
 }
+
+
 
 .nuevoTablero input{
 
@@ -142,6 +170,8 @@ body{
     font-size:16px;
 
 }
+
+
 
 .nuevoTablero button{
 
@@ -167,6 +197,8 @@ body{
 
 }
 
+
+
 .lista{
 
     background:white;
@@ -179,6 +211,8 @@ body{
 
 }
 
+
+
 .lista h2{
 
     color:#157347;
@@ -186,6 +220,8 @@ body{
     margin-bottom:25px;
 
 }
+
+
 
 #listaTableros{
 
@@ -196,9 +232,13 @@ body{
     gap:20px;
 
 }
+
+
+
 /*==============================================
 TARJETAS DE TABLEROS
 ==============================================*/
+
 
 #listaTableros{
 
@@ -211,6 +251,8 @@ TARJETAS DE TABLEROS
     margin-top:25px;
 
 }
+
+
 
 .cardTablero{
 
@@ -226,11 +268,15 @@ TARJETAS DE TABLEROS
 
 }
 
+
+
 .cardTablero:hover{
 
     transform:translateY(-5px);
 
 }
+
+
 
 .cardTablero .color{
 
@@ -239,6 +285,8 @@ TARJETAS DE TABLEROS
     height:14px;
 
 }
+
+
 
 .cardTablero h3{
 
@@ -250,6 +298,8 @@ TARJETAS DE TABLEROS
 
 }
 
+
+
 .cardTablero p{
 
     margin:0 20px 20px;
@@ -259,6 +309,8 @@ TARJETAS DE TABLEROS
     min-height:45px;
 
 }
+
+
 
 .cardTablero button{
 
@@ -284,8 +336,50 @@ TARJETAS DE TABLEROS
 
 }
 
+
+
 .cardTablero button:hover{
 
     background:#115c37;
+
+}
+/*==============================================
+IMAGEN TABLERO
+==============================================*/
+
+
+.fotoTablero{
+
+    width:100%;
+
+    height:170px;
+
+    object-fit:cover;
+
+    display:block;
+
+}
+
+
+
+.sinFoto{
+
+    width:100%;
+
+    height:170px;
+
+    background:#eeeeee;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:#777;
+
+    font-weight:bold;
+
+    font-size:18px;
 
 }

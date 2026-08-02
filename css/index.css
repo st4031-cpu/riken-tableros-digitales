@@ -5,26 +5,41 @@
     font-family:Segoe UI,Tahoma,Geneva,Verdana,sans-serif;
 }
 
+
 body{
 
     min-height:100vh;
 
-    background:url("../img/fondo.jpg");
+    background:
+
+    linear-gradient(
+        rgba(0,0,0,.45),
+        rgba(0,0,0,.45)
+    ),
+
+    url("../img/fondo.jpeg");
+
 
     background-size:cover;
 
-    background-position:center;
+    background-position:center 35%;
 
     background-repeat:no-repeat;
 
+    background-attachment:fixed;
+
 }
+
+
+/*================================*/
+/* CONTENEDOR PRINCIPAL */
+/*================================*/
 
 .overlay{
 
     width:100%;
-    min-height:100vh;
 
-    background:rgba(0,0,0,.55);
+    min-height:calc(100vh - 90px);
 
     display:flex;
 
@@ -36,9 +51,16 @@ body{
 
 }
 
+
+
+/*================================*/
+/* TARJETA */
+/*================================*/
+
 .card{
 
     width:100%;
+
     max-width:650px;
 
     background:white;
@@ -49,9 +71,12 @@ body{
 
     text-align:center;
 
-    box-shadow:0 20px 60px rgba(0,0,0,.35);
+    box-shadow:
+    0 20px 60px rgba(0,0,0,.35);
 
 }
+
+
 
 .logo{
 
@@ -60,6 +85,8 @@ body{
     margin-bottom:25px;
 
 }
+
+
 
 h1{
 
@@ -71,6 +98,8 @@ h1{
 
 }
 
+
+
 p{
 
     color:#666;
@@ -80,6 +109,8 @@ p{
     font-size:18px;
 
 }
+
+
 
 #buscar{
 
@@ -99,11 +130,15 @@ p{
 
 }
 
+
+
 #buscar:focus{
 
     border-color:#0d6b3d;
 
 }
+
+
 
 #btnAreas{
 
@@ -127,11 +162,15 @@ p{
 
 }
 
+
+
 #btnAreas:hover{
 
     background:#0a5832;
 
 }
+
+
 
 .estadisticas{
 
@@ -143,11 +182,15 @@ p{
 
 }
 
+
+
 .estadisticas div{
 
     text-align:center;
 
 }
+
+
 
 .estadisticas span{
 
@@ -160,6 +203,8 @@ p{
     color:#0d6b3d;
 
 }
+
+
 
 .estadisticas small{
 
